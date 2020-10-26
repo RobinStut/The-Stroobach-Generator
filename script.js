@@ -78,7 +78,7 @@ const createImageOutputs = dataUrlList => {
             const green = imageColors[1]
             const blue = imageColors[2]
     
-            const newSVG = `<svg enable-background="new 0 0 325.4 325.4" style="height:2rem;width:2rem;" version="1.1" viewBox="0 0 325.4 325.4" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            const newSVG = `<svg enable-background="new 0 0 325.4 325.4" style="height:.5rem;width:.5rem;" version="1.1" viewBox="0 0 325.4 325.4" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
             <circle cx="162.7" cy="162.7" r="162.7" style="fill:rgb(${red}, ${green}, ${blue})"/>
             </svg>`
 
