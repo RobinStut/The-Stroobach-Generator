@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: crimson;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.output{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+
+.output-wrapper {
+    padding: 3rem;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(12, 1fr);
+    box-shadow: -0.125rem -0.125rem 0.0625rem rgba(0,0,0,0.5) inset, 1.25rem 0.25rem 0.625rem rgba(0,0,0,0.35), 2.5rem 0.5rem 0.625rem rgba(0,0,0,0.15);
+    background-color: white;
+    height: fit-content;
+}
+
+.output-wrapper svg {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control-wrapper img {
+    height: 16rem
+}
+
+.control-wrapper {
+    display: grid;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.control-wrapper input, .control-wrapper button {
+    border: 0;
+    color: white;
+    background-color: #467fee;
+    border-radius: .5rem;
+    margin: 0;
+}
+
+.control-wrapper button, .control-wrapper input[type="file" i] {
+    padding: .5rem;
+    width: 16.875rem;
+}
+
+.control-wrapper .range-control:not(.hide) { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.control-wrapper .range-control label {
+    display: flex;
+    padding: 1rem 0;
+    color: white;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+.hide {
+    display: none;
+}
+
+.visibility {
+    visibility: hidden;
+}
