@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="control-wrapper" userControls>
         <input type="file" accept="image/png, image/jpeg" fileInput showHide>
         <button class="hide" resetTrigger showHide>Reset</button>
@@ -19,7 +18,7 @@
         </div>
         <div class="range-control hide" showHide>
             <label for="circleSize">circle size      
-            <input type="range" id="circleSize" name="circleSize" value="32"
+            <input type="range" id="circleSize" name="circleSize" value="8"
             min="1" max="80" step="1" circleSize>
         </label>  
             <label for="gapSize">gap size between circles     
@@ -31,6 +30,11 @@
     
     <div class="output" output>
         <div class="output-wrapper hide" imageOutputWrapper></div>
+    </div>
+
+    <div class="credits">
+        <a href="https://www.linkedin.com/in/robin-stut-173779b7/"><span>Developed by: </span>Robin Stut</a>
+        <a href="https://www.instagram.com/p/CGHx8mJFMcA/"><span>Inspired by: </span>Boaz Stroobach</a>
     </div>
 
     <script defer src="./dist/color-thief.umd.js"></script>
