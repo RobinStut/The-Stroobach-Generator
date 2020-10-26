@@ -35,7 +35,7 @@ body {
 .control-wrapper {
     display: grid;
     justify-content: center;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .control-wrapper input, .control-wrapper button {
@@ -71,4 +71,18 @@ body {
 
 .visibility {
     visibility: hidden;
+}
+
+.credits {
+    position: absolute;
+    display: flex;
+    padding: .2rem;
+    font-size: 0.75rem;
+    justify-content: space-around;
+    width: 100vw;
+    bottom: 0;
+}
+
+.credits a {
+    color: white;
 }
