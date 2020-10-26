@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroobach generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="control-wrapper" userControls>
+        <input type="file" accept="image/png, image/jpeg" fileInput showHide>
+        <button class="hide" resetTrigger showHide>Reset</button>
+        <div class="range-control" showHide>
+            <label for="xAxisDensity">Circle density on X axis       
+                <input type="range" id="xAxisDensity" name="xAxisDensity" value="12"
+                min="2" max="30" xAxisDensity>
+            </label> 
+        </div>
+        <div class="range-control hide" showHide>
+            <label for="circleSize">circle size      
+            <input type="range" id="circleSize" name="circleSize" value="32"
+            min="1" max="80" step="1" circleSize>
+        </label>  
+            <label for="gapSize">gap size between circles     
+            <input type="range" id="gapSize" name="gapSize" value="0.5"
+            min="0.1" max="2" step="0.1" gapSize>
+        </label>   
+        </div>
+    </div>
+    
+    <div class="output" output>
+        <div class="output-wrapper hide" imageOutputWrapper></div>
+    </div>
+
+    <script defer src="./dist/color-thief.umd.js"></script>
+    <script defer src="./dist/image-to-slices.js"></script>
+    <script defer src="./script.js"></script>
+</body>
+</html>
